@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.24)
+project(autonomous_driving_simulator_toolkit LANGUAGES CXX)
+add_library(autonomous_driving_simulator_toolkit src/driving.cpp)
+target_include_directories(autonomous_driving_simulator_toolkit PUBLIC include)
+target_compile_features(autonomous_driving_simulator_toolkit PUBLIC cxx_std_20)
